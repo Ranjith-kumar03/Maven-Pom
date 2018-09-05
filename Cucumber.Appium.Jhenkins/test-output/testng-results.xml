@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">open the browser (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter username (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Enter password (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">press the login button (SKIPPED)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Quit the browser (SKIPPED)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="83080" started-at="2018-09-04T08:43:13Z" finished-at="2018-09-04T08:44:36Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTest@6adede5]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="83080" started-at="2018-09-04T08:43:13Z" finished-at="2018-09-04T08:44:36Z">
+      <class name="runner.RunTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunTest@6adede5]" name="setUpClass" is-config="true" duration-ms="238" started-at="2018-09-04T08:43:13Z" finished-at="2018-09-04T08:43:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="SKIP" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunTest@6adede5]" name="runScenario" duration-ms="82502" started-at="2018-09-04T08:43:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-09-04T08:44:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logging in to facebook"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logging in to a facebook website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Locator Strategy 'name' is not supported for this session
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-LUMCGL2', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, databaseEnabled: false, desired: {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, deviceName: Ranjith, platformName: android, platformVersion: 7.1.1, udid: H1AXHM03E676X4Z}, deviceManufacturer: asus, deviceModel: ASUS_X00DD, deviceName: H1AXHM03E676X4Z, deviceScreenSize: 1080x1920, deviceUDID: H1AXHM03E676X4Z, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 7.1.1, takesScreenshot: true, udid: H1AXHM03E676X4Z, warnings: {}, webStorageEnabled: false}
+Session ID: d29adfa2-92de-4fea-b9ff-a510229dafc2
+*** Element info: {Using=name, value=email}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Locator Strategy 'name' is not supported for this session
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-LUMCGL2', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, databaseEnabled: false, desired: {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, deviceName: Ranjith, platformName: android, platformVersion: 7.1.1, udid: H1AXHM03E676X4Z}, deviceManufacturer: asus, deviceModel: ASUS_X00DD, deviceName: H1AXHM03E676X4Z, deviceScreenSize: 1080x1920, deviceUDID: H1AXHM03E676X4Z, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 7.1.1, takesScreenshot: true, udid: H1AXHM03E676X4Z, warnings: {}, webStorageEnabled: false}
+Session ID: d29adfa2-92de-4fea-b9ff-a510229dafc2
+*** Element info: {Using=name, value=email}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:118)
+at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at StepDefinition.MobileApp_StepDefinition.enter_username(MobileApp_StepDefinition.java:34)
+at ✽.Enter username(src/test/java/Features/MobileApp.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">open the browser (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter username (FAILED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Enter password (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">press the login button (SKIPPED)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Quit the browser (SKIPPED)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunTest@6adede5]" name="tearDownClass" is-config="true" duration-ms="176" started-at="2018-09-04T08:44:36Z" finished-at="2018-09-04T08:44:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
